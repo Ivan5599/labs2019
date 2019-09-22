@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DBDataSet" targetNamespace="http://tempuri.org/DBDataSet.xsd" xmlns:mstns="http://tempuri.org/DBDataSet.xsd" xmlns="http://tempuri.org/DBDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WindowsFormsApp6.Properties.Settings.GlobalReference.Default.DBConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Details_KnotTableAdapter" GeneratorDataComponentClassName="Details_KnotTableAdapter" Name="Details_Knot" UserDataComponentName="Details_KnotTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DBConnectionString (Settings)" DbObjectName="DB.dbo.Details_Knot" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID_Description FROM dbo.Details_Knot</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID_Description" DataSetColumn="ID_Description" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="DBConnectionString (Settings)" DbObjectName="DB.dbo.Details_Knot" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID_Description FROM dbo.Details_Knot</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DBDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DBDataSet" msprop:Generator_UserDSName="DBDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Details_Knot" msprop:Generator_TableClassName="Details_KnotDataTable" msprop:Generator_TableVarName="tableDetails_Knot" msprop:Generator_RowChangedName="Details_KnotRowChanged" msprop:Generator_TablePropName="Details_Knot" msprop:Generator_RowDeletingName="Details_KnotRowDeleting" msprop:Generator_RowChangingName="Details_KnotRowChanging" msprop:Generator_RowEvHandlerName="Details_KnotRowChangeEventHandler" msprop:Generator_RowDeletedName="Details_KnotRowDeleted" msprop:Generator_RowClassName="Details_KnotRow" msprop:Generator_UserTableName="Details_Knot" msprop:Generator_RowEvArgName="Details_KnotRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_Description" msprop:Generator_ColumnVarNameInTable="columnID_Description" msprop:Generator_ColumnPropNameInRow="ID_Description" msprop:Generator_ColumnPropNameInTable="ID_DescriptionColumn" msprop:Generator_UserColumnName="ID_Description">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
